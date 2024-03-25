@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form>
+  <div class="calculator">
+    <pre>    <strong>SM IBRAHIM</strong>   <small>Alvi-223552</small></pre>
+    
+    <div class="screen">
+      <input type="text" name="display" class="display" disabled>
+      <input type="text" name="displayTwo" value="0" disabled>
+      
+    </div>
+    
+    <div class="buttons"> 
+      <div class="btn ac grey">
+        <input type="button" value="Ac" onclick="display.value = '';displayTwo.value = '0' ">
+      </div>
+      <div class="btn del grey">
+        <input type="button" value="Del" onclick="display.value = display.value.toString().slice(0, -1)">
+      </div>
+      <div class="btn parsent grey">
+        <input type="button" value="%" onclick="displayTwo.value = eval(display.value)/100 ">
+      </div>
+      <div class="btn devided orange">
+        <input type="button" value="÷" onclick="display.value += '/' ">
+      </div>
+       
+      <div class="btn seven ">
+        <input type="button" value="7" onclick="seven()">
+      </div>
+      <div class="btn eight">
+        <input type="button" value="8" onclick="display.value += '8' ">
+      </div>
+      <div class="btn nine">
+        <input type="button" value="9" onclick="display.value += '9' ">
+      </div>
+      <div class="btn multiple orange">
+        <input type="button" value="×" onclick="display.value += '*' ">
+      </div>
+       
+       
+      <div class="btn four">
+        <input type="button" value="4" onclick="display.value += '4' ">
+      </div>
+      <div class="btn five">
+        <input type="button" value="5" onclick="display.value += '5' ">
+      </div>
+      <div class="btn six">
+        <input type="button" value="6" onclick="display.value += '6' ">
+      </div>
+      <div class="btn minus orange">
+        <input type="button" value="-" onclick="display.value += '-' ">
+      </div>
+      
+      <div class="btn one">
+        <input type="button" value="1" onclick="display.value += '1' ">
+      </div>
+      <div class="btn two">
+        <input type="button" value="2" onclick="display.value += '2' ">
+      </div>
+      <div class="btn three">
+        <input type="button" value="3" onclick="display.value += '3' ">
+      </div>
+      <div class="btn plus orange">
+        <input type="button" value="+" onclick="display.value += '+' ">
+      </div>
+      
+      <div class="btn zero">
+        <input type="button" value="0" onclick="display.value += '0' ">
+      </div>
+      <div class="btn dot">
+        <input type="button" value="." onclick="display.value += '.' ">
+      </div>
+      <div class="btn equal orange">
+        <input type="button" value="=" onclick="displayTwo.value = eval(display.value)">
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+      
+    
+    
+  </div>
+  </form>
+  
+  
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
